@@ -1,0 +1,26 @@
+{
+  "name": "domoto-cli",
+  "description": "Administrador de dispositivos inteligentes",
+  "main": "",
+  "license": "ISC",
+  "private": true,
+  "authors": [
+    "Jose Lobo"
+  ],
+  "keywords": [
+    "domotica"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.98.0",
+    "socket.io-client": "^1.4.6",
+    "jquery": "^2.2.4",
+    "jquery-validation": "^1.15.0"
+  }
+}

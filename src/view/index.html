@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Domoto</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/material-icons.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/static/libs/Materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css"  media="screen,projection"/>
+  </head>
+<body>
+  <nav id="nav" class="blue darken-2" role="navigation">
+    <a href="#" class="brand-logo center">Domoto</a>
+     
+    <ul id="menu" class="side-nav fixed grey darken-4">
+      <li><a id="btnMenuCollapse" href="#" class="center-align"><i class="material-icons secondary-content">chevron_left</i><b>Menu</b></a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"></ul>
+      </li>
+    </ul>
+
+    <ul class="left">
+      <li>
+        <a id="btnCollapseHidden" href="#" data-activates="menu" class="hide">hidden</a>
+        <a id="btnCollapse" href="#" class="valign-wrapper show-on-large"><i class="material-icons">menu</i></a>
+      </li>
+    </ul>
+      
+    <ul class="right">
+      <li>
+        <a href="https://gitlab.com/jloboprs/domoto-cli" class="valign-wrapper">
+          <img src="/static/img/git.png" title="Source code" alt="Source code" class="valign">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <main id="main"></main>
+
+  <footer id="footer" class="page-footer white">
+    <div class="footer-copyright">
+      <div class="container black-text">
+      Made by <a class="teal-text " href="https://gitlab.com/u/jloboprs"><b>José Lobo</b></a>
+      </div>
+    </div>    
+  </footer>
+  
+  <!-- build:js /js/lib.js -->
+  <script>if (typeof module === 'object') {window.__module__ = module; module = undefined;}</script>
+  <script type="text/javascript" src="/static/libs/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="/static/libs/Materialize/dist/js/materialize.js"></script>
+  <script type="text/javascript" src="/static/libs/jquery-validation/dist/jquery.validate.js"></script>
+  <script>if (window.__module__) module = window.__module__;</script>
+  <!-- endbuild -->
+
+  <script>require('../app/indexView')</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<template>
+  <div class="container">
+    <h3 class="header light blue-text">Welcome to Domoto</h5>
+    <h5 class="header light">From this application you can control your smart devices</h5>
+    <blockquote>
+      To make use of <strong>Domoto</strong> you must install the extensions of your smart devices.
+      <em>e.g.: <code>domoto-mia-cucina</code></em>
+    </blockquote>
+    <form novalidate="novalidate">
+      <div class="input-field">
+        <input id="package" name="package" type="text" class="validate" maxlength="50" required="required" aria-required="true" />
+        <label for="package">Extension</label>
+      </div>
+      <button type="submit" class="btn waves-effect waves-light">Install</button>
+    </form>
+  </div>
+</template>

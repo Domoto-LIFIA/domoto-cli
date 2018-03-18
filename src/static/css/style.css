@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.parallax-container {
+    min-height: 300px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  padding-top: 0;
+}
+
+nav .valign-wrapper {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+nav .valign {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*Menu lateral*/
+@media (min-width: 991px) {
+  main:not(.hide-menu), header:not(.hide-menu),
+  footer:not(.hide-menu), nav:not(.hide-menu) {
+    padding-left: 240px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container:not(.hide-menu) {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container:not(.hide-menu) {
+    width: 85%;
+  }
+}
+
+.side-nav.hide {
+  display: block !important;
+  -webkit-transform: translateX(-105%) !important;
+          transform: translateX(-105%) !important;
+}
+
+/*Menu icons*/
+.side-nav .collapsible-header,
+.side-nav.fixed .collapsible-header,
+.side-nav.fixed a {
+  padding: 0 15px;
+}
+
+.collapsible-header i.secondary-content,
+i.secondary-content {
+    float: right;
+    color: inherit;
+    margin: 0px;
+}
+
+nav,
+.side-nav.fixed a {
+    color: #f5f5f5;
+}
+
+.side-nav .collapsible-body,
+.side-nav.fixed .collapsible-body {
+  background-color: #424242;
+}
+
+/*Validacion*/
+.input-field label {
+    width: 100%;
+}
+
+.input-field label:after {
+    transition-property: all !important;
+    font-size: 0.8rem;
+    transform: none;
+}
+
+.input-field label:not(.active):after {
+  transform: translateY(-140%);
+}
+
+.input-field input.invalid + label:after {
+  top: 55px;
+}
+
+.input-field input.validate {
+  margin: 0 0 20px 0;
+}
+/*Validacion*/
+
+.progress {
+  margin: 0;
+  position: fixed;
+}
+
+.card .card-content .card-title {
+  display: inline;
+}
